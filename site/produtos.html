@@ -1,0 +1,111 @@
+<html>
+     <head>
+        <link href="css/estilo.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/estilo_produtos.css"/> 
+        <link rel="shortcut icon" href="imagens/logo 2.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <title>site do gp</title>
+    </head>
+    <body>
+        <header>
+            <div class="divHeader"> 
+                <img src="imagens/logo final.jpg" class="logo"/>  
+                <!--Barra de navegação-->
+                <nav>
+                    <!--Lista de itens do menu-->
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>               
+                </nav>
+            </div>
+        </header>
+        <!--conteudo de produtos-->
+        <main>
+            <ul class="produtos-titulo">
+                <h2><li>Produtos</li></h2>
+                <h3>Nossa linha de futevôlei foi criada para quem leva o jogo a sério — dentro e fora da areia.<p>Trabalhamos com roupas leves e respiráveis, sungas com ajuste confortável e seguro,<p>bolas de alta qualidade que garantem controle, precisão e durabilidade em qualquer partida.</p></h3>
+            </ul>
+            <!--exibe a data-->
+            <p class="dataAtual">
+                <script type="text/JavaScript">
+                    dia = new Array("Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado");
+
+                    mes = new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro");
+
+                    data = new Date
+                    document.write(dia[data.getDay()] + ",  " + data.getDate() + " De  " +  mes[data.getMonth()] + " De  " +  data.getFullYear());
+                </script>
+            </p>
+            <!--exibição dos produtos-->
+            <div class="container">
+                <div class="card" onclick="abrirPopup('Bolas Mikasa', 'Cores: Branca, Amarela e Mista', 'R$299,00')">
+                    <img src="imagens/bola_mikasa.png"/>
+                    <h2>Bolas Mikasa</h2>
+                    <p>Cores: Branca, Amarela e Mista</p>
+                    <p class="preco">R$299,90/UN</p>
+                </div>
+
+                <div class="card" onclick="abrirPopup('Kit Preto ATHLETA', 'Tamanhos: P, M, G', 'R$139,90')">
+                    <img src="imagens/kit_preto.webp"/>
+                    <h2>Kit Preto ATHLETA</h2>
+                    <p>Tamanhos: P, M, G</p>
+                    <p class="preco">R$139,90</p>
+                </div>
+
+                <div class="card" onclick="abrirPopup('Kit Branco ATHLETA', 'Tamanhos: P, M, G', 'R$159,90')">
+                    <img src="imagens/kit_branco.webp"/>
+                    <h2>Kit Branco ATHLETA</h2>
+                    <p>Tamanhos: P, M, G</p>
+                    <p class="preco">R$159,90</p>
+                </div>
+
+                <div class="card" onclick="abrirPopup('Kit Rosa ATHLETA', 'Tamanhos: P, M, G', 'R$179,90')">
+                    <img src="imagens/kit_rosa.webp"/>
+                    <h2>Kit Rosa ATHLETA</h2>
+                    <p>Tamanhos: P, M, G</p>
+                    <p class="preco">R$179,90</p>
+                </div>
+
+                <div class="card" onclick="abrirPopup('Kit ATHLETA', 'Tamanhos: P, M, G', 'R$199,90')">
+                    <img src="imagens/kit_athleta.png"/>
+                    <h2>Kit ATHLETA</h2>
+                    <p>Tamanhos: P, M, G</p>
+                    <p class="preco">R$199,90</p>
+                </div>
+
+                <div class="card" onclick="abrirPopup('Sungas ATHLETA', 'Tamanhos: P, M, G', 'R$99,90/UN')">
+                    <img src="imagens/sungas.png"/>
+                    <h2>Sungas ATHLETA</h2>
+                    <p>Tamanhos: P, M, G</p>
+                    <p class="preco">R$99,90/UN</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <img src="imagens/logo final.jpg" title="Liga Nacional de FUTEVÔLEI" class="logo_footer" />
+            <p>Encomendas on-line: <a href="https://wa.me/5511950819126" target="_blank"><i class="fa fa-whatsapp"></i> (11) 95081-9126</a> | 
+            <a href="https://instagram.com/ligafutevoleioficial" target="_blank"><i class="fa fa-instagram"></i> ligafutevoleioficial</a> </p> 
+        </footer>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="fechar" onclick="fecharPopup()">&times;</span>
+                <h2 id="popup-titulo"></h2>
+                <p id="popup-descricao"></p>
+                <p id="popup-preco" class="preco"></p>
+            </div>
+        </div>
+        <script>
+            function abrirPopup(titulo, descricao, preco) {
+                document.getElementById("popup-titulo").innerText = titulo;
+                document.getElementById("popup-descricao").innerText = descricao;
+                document.getElementById("popup-preco").innerText = preco;
+                document.getElementById("popup").style.display = "flex";
+            }
+            function fecharPopup() {
+                document.getElementById("popup").style.display = "none";
+            }
+        </script>
+    </body>
+</html>     
