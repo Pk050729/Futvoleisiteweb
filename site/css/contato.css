@@ -1,0 +1,111 @@
+/* fundo */
+.contato-container {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(#fff, rgb(79, 219, 247));
+
+    padding: 40px;
+}
+
+/* caixa */
+.contato-box {
+
+    background: white;
+
+    width: 500px;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* titulo */
+.contato-box h1 {
+
+    color: rgb(5, 106, 189);
+
+    margin-bottom: 15px;
+}
+
+/* texto */
+.contato-box p {
+
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+/* formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* inputs */
+input,
+textarea {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* textarea */
+textarea {
+
+    height: 150px;
+    resize: none;
+}
+
+/* botão */
+button {
+    background: linear-gradient(135deg, #25D366, #1ebe5d);
+    color: white;
+    border: none;
+    padding: 18px;
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(37,211,102,0.3);
+}
+
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(37,211,102,0.4);
+}
+
+/* redes */
+.redes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* links */
+.redes a {
+    text-decoration: none;
+    color: rgb(33, 190, 252);
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    color: rgb(0, 157, 255);
+}
+

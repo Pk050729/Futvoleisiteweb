@@ -59,14 +59,14 @@ main {
 
 /* título do produto */
 .card h2 {
-    font-size: 18px;
+    font-size: 20px;
     margin: 10px 0;
 }
 
 /* descrição */
 .card p {
     margin: 5px 0;
-    font-size: 14px;
+    font-size: 21px;
 }
 
 /* preço */
@@ -139,4 +139,140 @@ main {
         transform: scale(1);
         opacity: 1;
     }
+}
+
+/* sombra premium */
+.popup-content {
+    box-shadow: 0 30px 50px rgb(5, 106, 189);
+}
+
+/* efeito blur no fundo */
+.popup {
+    backdrop-filter: blur(5px);
+}
+
+/* imagem do popup */
+#popup-imagem {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* popup maior */
+.popup-content {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 550px; /* aumenta largura */
+    text-align: center;
+    position: relative;
+    animation: aparecer 0.3s ease;
+}
+
+/* botão comprar */
+.btn-comprar {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #1ebe5d;
+}
+
+/* titulo do popup */
+#popup-titulo {
+    font-size: 32px;
+    margin-top: 15px;
+    color: rgb(5, 106, 189);
+}
+
+/* descrição */
+#popup-descricao {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* preço */
+#popup-preco {
+    font-size: 32px;
+    margin-top: 15px;
+}
+
+/* imagem maior */
+#popup-imagem {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
+} 
+
+/* slider */
+.slider {
+    position: relative;
+    width: 100%;
+}
+
+/* imagem */
+#popup-imagem {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* botões do slider */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* descrição produto */
+.desc_produto {
+    margin-top: 20px;
+}
+
+/* titulo */
+#popup-titulo {
+    font-size: 30px;
+    color: rgb(5, 106, 189);
+}
+
+/* descrição */
+#popup-descricao {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* popup maior */
+.popup-content {
+    width: 600px;
+    padding: 35px;
 }

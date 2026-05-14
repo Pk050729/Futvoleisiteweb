@@ -1,0 +1,88 @@
+<html>
+<head>
+    <link href="css/estilo.css" rel="stylesheet"/>
+    <link href="css/contato.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="imagens/logo 2.png" type="image/x-icon">
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Contato - Liga Nacional de Futevôlei</title>
+</head>
+<body>
+    <header>
+        <div class="divHeader">
+            <img src="imagens/logo final.jpg" class="logo"/>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="contato-container">
+        <div class="contato-box">
+            <h1>Entre em Contato</h1>
+            <p>
+                Tire suas dúvidas, faça pedidos ou entre em contato com nossa equipe.
+            </p>
+            <form onsubmit="enviarWhatsapp(event)">
+                <input type="text" id="nome" placeholder="Seu nome" required>
+                <input type="email" id="email" placeholder="Seu e-mail" required>
+                <select id="assunto" required>
+                <option value="">Selecione uma opção</option>
+                <option value="Entrar em contato">
+                    Entrar em contato
+                </option>
+                <option value="Sobre produtos">
+                    Sobre produtos
+                </option>
+                <option value="Ajuda com o pedido">
+                    Ajuda com o pedido
+                </option>
+            </select>
+                <button type="submit">
+                    Enviar Mensagem
+                </button>
+            </form>
+            <div class="redes">
+                <a href="https://wa.me/5511950819126" target="_blank">
+                    <i class="fa fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a href="https://instagram.com/ligafutevoleioficial" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="imagens/logo final.jpg"
+        title="Liga Nacional de FUTEVÔLEI"
+        class="logo_footer"/>
+        <p>
+            Encomendas on-line:
+            <a href="https://wa.me/5511950819126" target="_blank">
+                <i class="fa fa-whatsapp"></i>
+                (11) 95081-9126
+            </a>
+        </p>
+    </footer>
+        <script>
+                function enviarWhatsapp(event) {
+                event.preventDefault();
+                    let nome = document.getElementById("nome").value;
+                    let email = document.getElementById("email").value;
+                    let assunto = document.getElementById("assunto").value;
+                    let texto =
+                        `Olá! Me chamo ${nome}%0A
+                        Email: ${email}%0A
+                        Assunto: ${assunto}`;
+                    let numero = "5511950819126";
+                    let url = `https://wa.me/${numero}?text=${texto}`;
+                    window.open(url, "_blank");
+                }
+        </script>
+    </body>
+</html>

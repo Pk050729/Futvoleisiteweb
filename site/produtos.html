@@ -16,12 +16,12 @@
                     <ul class="menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="contato.html">Contato</a></li>
                     </ul>               
                 </nav>
             </div>
         </header>
-        <!--conteudo de produtos-->
+        <!--conteud o de produtos-->
         <main>
             <ul class="produtos-titulo">
                 <h2><li>Produtos</li></h2>
@@ -31,54 +31,82 @@
             <p class="dataAtual">
                 <script type="text/JavaScript">
                     dia = new Array("Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado");
-
                     mes = new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro");
-
                     data = new Date
                     document.write(dia[data.getDay()] + ",  " + data.getDate() + " De  " +  mes[data.getMonth()] + " De  " +  data.getFullYear());
                 </script>
             </p>
             <!--exibição dos produtos-->
             <div class="container">
-                <div class="card" onclick="abrirPopup('Bolas Mikasa', 'Cores: Branca, Amarela e Mista', 'R$299,00')">
+                <!--descricao-->
+            <script>
+                desc_produto ="Kit esportivo leve e confortável, ideal para treinos e jogos intensos de futevôlei."
+                sliderbola=['imagens/mikasa_branca.png', 'imagens/mikasa_amarela.png', 'imagens/mikasa_tricolor.png'] 
+            </script>
+                <div class="card" onclick="abrirPopup('Bolas Mikasa', 'Cores: Branca, Amarela e Mista', 'R$299,00/UN', sliderbola)">
                     <img src="imagens/bola_mikasa.png"/>
                     <h2>Bolas Mikasa</h2>
-                    <p>Cores: Branca, Amarela e Mista</p>
+                    <p><h4>Cores: Branca, Amarela e Mista</h4></p>
                     <p class="preco">R$299,90/UN</p>
                 </div>
 
-                <div class="card" onclick="abrirPopup('Kit Preto ATHLETA', 'Tamanhos: P, M, G', 'R$139,90')">
+                <!--descricao-->
+            <script>
+                desc_produto ="Kit esportivo leve e confortável, ideal para treinos e jogos intensos de futevôlei."
+                sliderpreto=['imagens/kitpreto2.png', 'imagens/kitpreto3.png'] 
+            </script>
+                <div class="card" onclick="abrirPopup('Kit Preto ATHLETA', 'Tamanhos: P, M, G', 'R$139,90', sliderpreto)">
                     <img src="imagens/kit_preto.webp"/>
                     <h2>Kit Preto ATHLETA</h2>
-                    <p>Tamanhos: P, M, G</p>
-                    <p class="preco">R$139,90</p>
+                    <p><h4>Tamanhos: P, M, G</h4></p>
+                    <p class="preco">R$139,90/UN</p>
                 </div>
-
-                <div class="card" onclick="abrirPopup('Kit Branco ATHLETA', 'Tamanhos: P, M, G', 'R$159,90')">
+                
+                <!--descricao-->
+            <script>
+                desc_produto ="Kit esportivo leve e confortável, ideal para treinos e jogos intensos de futevôlei."
+                sliderbranco=['imagens/kitbranco2.png','kitbranco3.png'] 
+            </script>
+                <div class="card" onclick="abrirPopup('Kit Branco ATHLETA', 'Tamanhos: P, M, G', 'R$159,90', sliderbranco)">
                     <img src="imagens/kit_branco.webp"/>
                     <h2>Kit Branco ATHLETA</h2>
-                    <p>Tamanhos: P, M, G</p>
-                    <p class="preco">R$159,90</p>
+                    <p><h4>Tamanhos: P, M, G</h4></p>
+                    <p class="preco">R$159,90/UN</p>
                 </div>
 
-                <div class="card" onclick="abrirPopup('Kit Rosa ATHLETA', 'Tamanhos: P, M, G', 'R$179,90')">
+                <!--descricao-->
+            <script>
+                desc_produto ="Kit esportivo leve e confortável, ideal para treinos e jogos intensos de futevôlei."
+                sliderrosa=['imagens/kitrosa2.png', 'imagens/kit_rosa3.png'] 
+            </script>
+                <div class="card" onclick="abrirPopup('Kit Rosa ATHLETA', 'Tamanhos: P, M, G', 'R$179,90', sliderrosa)">
                     <img src="imagens/kit_rosa.webp"/>
                     <h2>Kit Rosa ATHLETA</h2>
-                    <p>Tamanhos: P, M, G</p>
-                    <p class="preco">R$179,90</p>
+                    <p><h4>Tamanhos: P, M, G</h4></p>
+                    <p class="preco">R$179,90/UN</p>
                 </div>
 
-                <div class="card" onclick="abrirPopup('Kit ATHLETA', 'Tamanhos: P, M, G', 'R$199,90')">
+                <!--descricao-->
+            <script>
+                desc_produto ="Conjunto premium para atletas que buscam qualidade, conforto e performance em cada partida."
+                sliderathleta=['kitathleta2.png','kitathleta3.png'] 
+            </script>
+                <div class="card" onclick="abrirPopup('Kit ATHLETA', 'Tamanhos: P, M, G', 'R$199,90', sliderathleta)">
                     <img src="imagens/kit_athleta.png"/>
                     <h2>Kit ATHLETA</h2>
-                    <p>Tamanhos: P, M, G</p>
-                    <p class="preco">R$199,90</p>
+                    <p><h4>Tamanhos: P, M, G</h4></p>
+                    <p class="preco">R$199,90/UN</p>
                 </div>
 
-                <div class="card" onclick="abrirPopup('Sungas ATHLETA', 'Tamanhos: P, M, G', 'R$99,90/UN')">
+                <!--descricao-->
+            <script>
+                desc_produto ="Sungas com ajuste perfeito, tecido resistente e conforto ideal para esportes na areia."
+                slidersunga=['imagens/sungas2.png', 'imagens/sungas3.png'] 
+            </script>
+                <div class="card" onclick="abrirPopup('Sungas ATHLETA', 'Tamanhos: P, M, G', 'R$99,90/UN', slidersunga)">
                     <img src="imagens/sungas.png"/>
                     <h2>Sungas ATHLETA</h2>
-                    <p>Tamanhos: P, M, G</p>
+                    <p><h4>Tamanhos: P, M, G</h4></p>
                     <p class="preco">R$99,90/UN</p>
                 </div>
             </div>
@@ -91,20 +119,57 @@
         <div id="popup" class="popup">
             <div class="popup-content">
                 <span class="fechar" onclick="fecharPopup()">&times;</span>
-                <h2 id="popup-titulo"></h2>
-                <p id="popup-descricao"></p>
-                <p id="popup-preco" class="preco"></p>
+            <!-- SLIDER -->
+            <div class="slider">
+                <button class="prev" onclick="mudarSlide(-1)">❮</button>
+                <img id="popup-imagem" src="" alt="Produto">
+                <button class="next" onclick="mudarSlide(1)">❯</button>
+            </div>
+            <!-- informações -->
+                <div class="desc_produto">
+                    <h2 id="popup-titulo"></h2>
+                    <p id="popup-descricao"></p>
+                    <p id="popup-preco" class="preco"></p>
+                    <a id="btn-whatsapp" target="_blank">
+                        <button class="btn-comprar">
+                        Entre em Contato
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
+
         <script>
-            function abrirPopup(titulo, descricao, preco) {
+            let imagensProduto = [];
+            let imagemAtual = 0;
+            function abrirPopup(titulo, descricao, preco, imagens) {
+                imagensProduto = imagens;
+                imagemAtual = 0;
                 document.getElementById("popup-titulo").innerText = titulo;
                 document.getElementById("popup-descricao").innerText = descricao;
                 document.getElementById("popup-preco").innerText = preco;
+                document.getElementById("popup-imagem").src = imagensProduto[imagemAtual];
+            
+               // whatsapp
+                    let mensagem = `Olá! Tenho interesse no produto: ${titulo} - ${preco}`;
+                    let numero = "5511950819126";
+                    let linkWhatsapp = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+                document.getElementById("btn-whatsapp").href = linkWhatsapp;
                 document.getElementById("popup").style.display = "flex";
             }
             function fecharPopup() {
                 document.getElementById("popup").style.display = "none";
+            }
+            // slider
+            function mudarSlide(direcao) {
+                imagemAtual += direcao;
+                if (imagemAtual < 0) {
+                        imagemAtual = imagensProduto.length - 1;
+                    }
+                if (imagemAtual >= imagensProduto.length) {
+                    imagemAtual = 0;
+                }
+                document.getElementById("popup-imagem").src = imagensProduto[imagemAtual];
             }
         </script>
     </body>
